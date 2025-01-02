@@ -114,6 +114,7 @@ pip install chainlit
 
 ```python
 import appbuilder
+from appbuilder.utils.chainlit_deploy import ChainlitRuntime
 
 # 空模版组件
 playground = appbuilder.Playground(
@@ -121,11 +122,11 @@ playground = appbuilder.Playground(
     model="Qianfan-Agent-Speed-8K"
 )
 
-# 使用 AgentRuntime 来服务化playground组件
-agent = appbuilder.AgentRuntime(component=playground)
+# 使用 ChainlitRuntime 来服务化playground组件
+agent = ChainlitRuntime(component=playground)
 
 # 启动chainlit demo，会自动在浏览器打开体验对话框页面
-agent.chainlit_demo(port=8091)
+agent.chainlit_component(port=8091)
 ```
 
 也可以对AppBuilderClient进行服务化，快速部署
@@ -133,10 +134,8 @@ agent.chainlit_demo(port=8091)
 ```python
 import os
 from appbuilder.core.component import Component
-from appbuilder import (
-    AgentRuntime,
-    AppBuilderClient,
-)
+from appbuilder.utils.chainlit_deploy import ChainlitRuntime
+from appbuilder import AppBuilderClient
 
 
 if __name__ == "__main__":
@@ -148,6 +147,6 @@ if __name__ == "__main__":
     # 网页已部署的应用链接为「地理小达人」：https://appbuilder.baidu.com/s/x1tSF
     app_id = "42eb211a-14b9-43d2-9fae-193c8760ef26"
     agent_builder = AppBuilderClient(app_id)
-    agent = AgentRuntime(component=agent_builder)
+    agent = ChainlitRuntime(component=agent_builder)
     agent.chainlit_agent(port=8091)
 ```

@@ -25,6 +25,7 @@ import shutil
 import datetime
 from setuptools import setup, find_packages
 
+
 with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
@@ -54,7 +55,7 @@ all_require = serve_require + trace_require + test_require + langchain_require
 setup(
     name="appbuilder-sdk",
     # NOTE(chengmo): 修改此版本号时，请注意同时修改 __init__.py 中的 __version__
-    version="0.9.8",
+    version='0.9.8.3', 
     author="dongdaxiang",
     author_email="dongdaxiang@baidu.com",
     packages=packages,

@@ -55,9 +55,10 @@ touch sample/component_sample.py
 ```python
 # ./smaple目录下component_sample.py
 import appbuilder
+from appbuilder.utils.flask_deploy import FlaskRuntime
 
 component = appbuilder.Playground(prompt_template="{query}", model="ERNIE-Bot")
-agent = appbuilder.AgentRuntime(component=component)
+agent = FlaskRuntime(component=component)
 agent.serve(port=8091)
 ```
 

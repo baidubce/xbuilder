@@ -17,7 +17,7 @@ import unittest
 import random
 
 from appbuilder.core.components.llms.style_writing import StyleWriting
-from appbuilder.core.agent import AgentRuntime
+from appbuilder.utils.flask_deploy import FlaskRuntime
 from appbuilder.core.component import Component
 from appbuilder.core.message import Message
 from appbuilder.utils.sse_util import SSEClient
@@ -69,8 +69,8 @@ class TestCoreAgent(unittest.TestCase):
 
     def test_core_agent_create_flask1(self):
         component = FakeComponent1()
-        # agent = AgentRuntime(component=StyleWriting(model="eb"))
-        agent = AgentRuntime(component=component)
+        # agent = FlaskRuntime(component=StyleWriting(model="eb"))
+        agent = FlaskRuntime(component=component)
 
         app = agent.create_flask_app()
         client = app.test_client()
@@ -122,7 +122,7 @@ class TestCoreAgent(unittest.TestCase):
 
     def test_core_agent_create_flask2(self):
         component = FakeComponent2()
-        agent = AgentRuntime(component=component)
+        agent = FlaskRuntime(component=component)
         app = agent.create_flask_app()
         client = app.test_client()
         payload = {

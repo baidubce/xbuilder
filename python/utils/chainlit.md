@@ -11,8 +11,8 @@
 - 提供 `API调用` & `交互式窗口` 两种服务化部署方式，支持快速上云，平滑嵌入到你的产品中
 
 ## 如何使用AppBuilder-SDK & Chainlit可视化功能💻
-当前SDK中的`AgentRuntime`模块基于Chainlit实现了基础的可视化功能，支持AppBuilderClient + 能力组件实现可视化交互。
-- `chainlit_demo`接口支持基础组件的简单交互
+当前SDK中的`ChainlitRuntime`模块基于Chainlit实现了基础的可视化功能，支持AppBuilderClient + 能力组件实现可视化交互。
+- `chainlit_component`接口支持基础组件的简单交互
 - `chainlit_agent`接口支持AppBuilderClient的进阶交互，提供新建会话和上传文件的功能
 
 如果对于可视化有更多需求，可以参考AppBuilder SDK中的代码，基于Chainlit进行二次开发。

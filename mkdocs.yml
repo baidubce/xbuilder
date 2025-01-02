@@ -68,10 +68,9 @@ nav:
       - TRACE拓展功能: BasisModule/Trace/phoenix_method.md
       - Debug功能: BasisModule/Trace/Debug.md
     - 部署:
-      - 交互式前端部署: BasisModule/Deployment/AgentChainlit.md
+      - 交互式前端部署: BasisModule/Deployment/chainlit_runtime.md
       - 公有云部署: BasisModule/Deployment/cloud.md
-      - API 访问: BasisModule/Deployment/flask.md
-      - AgentRuntime: BasisModule/Deployment/agentruntime.md
+      - API 访问: BasisModule/Deployment/flask_deploy.md
       - UserSession: BasisModule/Deployment/usersession.md
     - 平台:
       - 应用:

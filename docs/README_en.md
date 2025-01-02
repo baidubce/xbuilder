@@ -33,15 +33,15 @@ Baidu AI Cloud Qianfan AppBuilder-SDK offers the following essential features fo
 
     - Orchestrate and manage knowledge flows, managing knowledge bases through KnowledgeBase, performing create, read, update, and delete (CRUD) operations on documents and knowledge slices, and developing industry-grade RAG applications with Baidu AI Cloud Qianfan AppBuilder Platform.
 
-    - Orchestrate and automate workflows, providing multi-level workflow abstractions such as `Message`, `Component`, and `AgentRuntime` to achieve workflow orchestration and integration with industry ecosystem capabilities like LangChain and OpenAI.
+    - Orchestrate and automate workflows, providing multi-level workflow abstractions such as `Message`, `Component`,  `FlaskRuntime`, and `ChainlitRuntime` to achieve workflow orchestration and integration with industry ecosystem capabilities like LangChain and OpenAI.
 
 3. Monitoring
     -  Providing monitoring tools such as visual Tracing and detailed DebugLog to assist developers in production environments.
 
 4. Deployment
 
-    - AgentRuntime supports deployment as an API service based on Flask and Gunicorn.
-    - AgentRuntime supports deployment as a Chainlit-based dialog interaction front-end application.
+    - FlaskRuntime supports deployment as an API service based on Flask and Gunicorn.
+    - ChainlitRuntime supports deployment as a Chainlit-based dialog interaction front-end application.
     - Offering the appbuilder_bce_deploy tool for rapid deployment of programs to Baidu Cloud, providing public network API services, and enabling integration with AppBuilder's workflow functionalities.
 
 
@@ -263,10 +263,9 @@ Hook:
             - [TRACE extended functions](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/phoenix_method.md)
             - [Debug functionality](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/Debug.md)
         - Deployment:
-            - [Interactive front-end deployment](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/AgentChainlit.md)
+            - [Interactive front-end deployment](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/chainlit_deploy.md)
             - [Public cloud deployment](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/cloud.md)
-            - [API access](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask.md)
-            - [AgentRuntime](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/agentruntime.md)
+            - [API access](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask_deploy.md)
             - [UserSession](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/usersession.md)
         - Platform:
             - Applications:

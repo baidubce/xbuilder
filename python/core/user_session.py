@@ -33,7 +33,7 @@ def lazy_import_sqlalchemy():
 class UserSession(object):
     """
     会话数据管理工具，实例化后将是一个全局变量。
-    提供保存对话数据与获取历史数据的方法，**必须**在 AgentRuntime 启动的服务中使用。
+    提供保存对话数据与获取历史数据的方法，**必须**在 FlaskRuntime和ChainlitRuntime 启动的服务中使用。
     """
     _instance = None
     _initialized = False

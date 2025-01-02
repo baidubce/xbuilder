@@ -289,7 +289,7 @@ class BaiduSearchWithModel(Component):
 #### Test文件目录
 
 * test文件需要为『test_』开头
-* 测试类需要形如『class TestAgentRuntime(unittest.TestCase)::』的定义方式
+* 测试类需要形如『class TestFlaskRuntime(unittest.TestCase)::』的定义方式
 * test文件需要置于appbuilder-sdk-ext/appbuilder_sdk_ext/tests路径下
 
 #### UnitTest提供三种标签实现两种运行模式

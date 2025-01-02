@@ -17,10 +17,9 @@
             - [TRACE基础功能](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/basic.md)
             - [TRACE拓展功能](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/phoenix_method.md)
         - 部署:
-            - [交互式前端部署](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/AgentChainlit.md)
+            - [交互式前端部署](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/chainlit_deploy.md)
             - [公有云部署](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/cloud.md)
-            - [API 访问](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask.md)
-            - [AgentRuntime](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/agentruntime.md)
+            - [API 访问](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask_deploy.md)
             - [UserSession](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/usersession.md)
         - 平台:
             - 应用:

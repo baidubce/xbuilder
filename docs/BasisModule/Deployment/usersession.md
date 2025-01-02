@@ -6,7 +6,7 @@
 
 ## 应用场景
 
-**必须**在 AgentRuntime 启动的服务中使用。
+**必须**在 FlaskRuntime和ChainlitRuntime 启动的服务中使用。
 
 ## Python基本用法
 
@@ -82,9 +82,9 @@ user_session.append({
         }) 
 ```
 
-### 4、UserSession结合AgentRuntime使用以及user_session.db文件读取
+### 4、UserSession结合FlaskRuntime/ChainlitRuntime使用以及user_session.db文件读取
 
-- [UserSession结合AgentRuntime使用以及user_session.db文件读取](https://github.com/baidubce/app-builder/blob/master/cookbooks/components/agent_runtime.ipynb)
+- [UserSession结合FlaskRuntime/ChainlitRuntime使用以及user_session.db文件读取](https://github.com/baidubce/app-builder/blob/master/cookbooks/components/user_session.ipynb)
 
 
 

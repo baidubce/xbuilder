@@ -336,4 +336,3 @@ jobs:
         echo "检测到Java文件被更改(根据环境变量APPBUILDER_JAVA_TESTS),准备启动Run Java tests with Jacoco部分..."
         cd cicd/app-builder/java
         bash print_coverage.sh
-

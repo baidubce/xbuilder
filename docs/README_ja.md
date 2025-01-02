@@ -30,15 +30,15 @@ Baidu AI Cloud Qianfan AppBuilder-SDKは、AIアプリケーション開発者�
 
     - 知識フローをオーケストレーションおよび管理し、KnowledgeBaseを通じて知識ベースを管理し、文書および知識スライスの作成、読み取り、更新、削除（CRUD）操作を実行し、Baidu AI Cloud Qianfan AppBuilderプラットフォームと共に業界グレードのRAGアプリケーションを開発します。
 
-    - ワークフローをオーケストレーションおよび自動化し、`Message`、`Component`、`AgentRuntime`などの多層ワークフロー抽象を提供し、ワークフローのオーケストレーションを実現し、LangChainやOpenAIなどの業界エコシステム機能と統合します。
+    - ワークフローをオーケストレーションおよび自動化し、`Message`、`Component`、`FlaskRuntime`、`ChainlitRuntime`などの多層ワークフロー抽象を提供し、ワークフローのオーケストレーションを実現し、LangChainやOpenAIなどの業界エコシステム機能と統合します。
 
 3. 監視
     - 開発者が生産環境で使用するための可視化トレースおよび詳細なデバッグログなどの監視ツールを提供します。
 
 4. デプロイメント
 
-    - AgentRuntimeは、FlaskおよびGunicornに基づくAPIサービスとしてデプロイメントをサポートします。
-    - AgentRuntimeは、Chainlitに基づく対話型フロントエンドアプリケーションとしてデプロイメントをサポートします。
+    - FlaskRuntimeは、FlaskおよびGunicornに基づくAPIサービスとしてデプロイメントをサポートします。
+    - ChainlitRuntimeは、Chainlitに基づく対話型フロントエンドアプリケーションとしてデプロイメントをサポートします。
     - プログラムをBaidu Cloudに迅速にデプロイし、パブリックネットワークAPIサービスを提供し、AppBuilderのワークフロー機能と統合するためのappbuilder_bce_deployツールを提供します。
 
 
@@ -259,10 +259,9 @@ print(answer.content.answer)
             - [TRACE拡張機能](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/phoenix_method.md)
             - [Debug機能](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/Debug.md)
         - デプロイ:
-            - [インタラクティブなフロントエンドデプロイ](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/AgentChainlit.md)
+            - [インタラクティブなフロントエンドデプロイ](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/chainlit_deploy.md)
             - [パブリッククラウドデプロイ](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/cloud.md)
-            - [API アクセス](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask.md)
-            - [AgentRuntime](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/agentruntime.md)
+            - [API アクセス](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask_deploy.md)
             - [UserSession](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/usersession.md)
         - プラットフォーム:
             - アプリケーション:

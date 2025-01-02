@@ -26,12 +26,12 @@
     - 调用AI原生应用，通过[AppBuilderClient](/docs/BasisModule/Platform/Application/appbuilder_client.md)可访问并管理在百度智能云千帆AppBuilder[网页端](https://console.bce.baidu.com/ai_apaas/app)发布的AI原生应用，并可注册本地函数联动端云组件
 - **编排**
     - 配置知识库，通过[KnowledgeBase](/docs/BasisModule/Platform/KnowledgeBase/knowledgebase.md)管理知识库，进行文档及知识切片的增删改查，配合[网页端](https://console.bce.baidu.com/ai_apaas/app)开发产业级的`RAG`应用
-    - 编排工作流，提供了`Message`、`Component`、`AgentRuntime`多级工作流抽象，实现工作流编排，并可与LangChain、OpenAI等业界生态能力打通
+    - 编排工作流，提供了`Message`、`Component`、`FlaskRuntime`、`ChainlitRuntime`多级工作流抽象，实现工作流编排，并可与LangChain、OpenAI等业界生态能力打通
 - **监控**
     - 提供了可视化Tracing、详细DebugLog等监控工具，助力开发者在生产环境应用
 - **部署**
-    - `AgentRuntime`支持部署为基于`Flask`与`gunicorn`的API服务
-    - `AgentRuntime`支持部署为基于`Chainlit`的对话框交互前端
+    - `FlaskRuntime`支持部署为基于`Flask`与`gunicorn`的API服务
+    - `ChainlitRuntime`支持部署为基于`Chainlit`的对话框交互前端
     - 提供了`appbuilder_bce_deploy`工具，可快速部署程序到百度云，提供公网API服务，联动AppBuilder工作流
 
 ### 使用 AppBuilder-SDK 可以构建什么应用？
@@ -296,10 +296,9 @@ Hook:
             - [TRACE基础功能](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/basic.md)
             - [TRACE拓展功能](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Trace/phoenix_method.md)
         - 部署:
-            - [交互式前端部署](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/AgentChainlit.md)
+            - [交互式前端部署](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/chainlit_deploy.md)
             - [公有云部署](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/cloud.md)
-            - [API 访问](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask.md)
-            - [AgentRuntime](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/agentruntime.md)
+            - [API 访问](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/flask_deploy.md)
             - [UserSession](https://github.com/baidubce/app-builder/blob/master/docs/BasisModule/Deployment/usersession.md)
         - 平台:
             - 应用:

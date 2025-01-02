@@ -33,7 +33,7 @@ class MyEventHandler(AppBuilderEventHandler):
         print("\n\033[1;31m","-> Agent 流式回答: \n", run_response.answer, "\033[0m")
         
 @unittest.skipUnless(os.getenv("TEST_CASE", "UNKNOWN") == "CPU_SERIAL","")
-class TestAgentRuntime(unittest.TestCase):
+class TestAppBuilderClient(unittest.TestCase):
     def setUp(self):
         """
         设置环境变量。
