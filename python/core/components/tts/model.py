@@ -120,7 +120,11 @@ class TTSRequest(proto.Message):
         _BAIDU_VALID_PER = {0, 1, 3, 4, 5, 103, 106, 110, 111, 4003, 4106, 4115, 4119,
             4105, 4117, 4100, 4103, 4144, 4278, 4143, 4140, 4129, 4149, 4254, 4206, 4226, 5003, 5118}
 
-        if self.per not in _BAIDU_VALID_PER:
+        # 以下音色暂未对公众开放，需要提交工单或联系商务获取权限
+        # 详情参考：https://ai.baidu.com/ai-doc/SPEECH/Rluv3uq3d
+        _BAIDU_VALID_PER_SPECIAL = {6205, 6221, 6546, 6602, 6562, 6543, 4277, 4179, 6567, 4146, 4114}
+
+        if self.per not in _BAIDU_VALID_PER and self.per not in _BAIDU_VALID_PER_SPECIAL:
             raise ValueError(
                 f"per value is illegal, expected in {_BAIDU_VALID_PER}, got {self.per}"
             )
