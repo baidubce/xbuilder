@@ -38,8 +38,9 @@ class Text2ImageSubmitRequest(BaseModel):
 
 
 class Text2ImageSubmitErrorDetail(BaseModel):
-    msg: Optional[str]
-    word: Optional[object]
+    msg: Optional[str] = Field(default=None)
+    word: Optional[object] = Field(default=None)
+    words: Optional[list] = Field(default=None)
 
 
 class Text2ImageSubmitResponseData(BaseModel):
@@ -51,7 +52,7 @@ class Text2ImageSubmitResponse(BaseModel):
     log_id: Optional[int] = None
     data: Optional[Text2ImageSubmitResponseData] = Text2ImageSubmitResponseData()
     error_msg: Optional[str] = None
-    error_detail: Optional[Text2ImageSubmitErrorDetail] = None
+    error_detail: Union[list[Text2ImageSubmitErrorDetail], Text2ImageSubmitErrorDetail, None] = None
     error_code: Optional[int] = None
 
 
@@ -103,3 +104,12 @@ class Text2ImageOutMessage(BaseModel):
                 图片所在 BOS http 地址，默认 1 小时失效。
     """
     img_urls: List[str]
+
+if __name__ == '__main__':
+    msg = {
+        'log_id': 1882788580231261430,
+        'error_msg': '文本敏感信息拦截', 
+        'error_detail': [
+            {'msg': '存在自定义文本黑名单不合规', 'words': ['特朗普', '特朗普']}, {'msg': '存在政治敏感不合规', 'words': []}], 'error_code': 282004}
+    resp = Text2ImageSubmitResponse(**msg)
+    print(resp)
